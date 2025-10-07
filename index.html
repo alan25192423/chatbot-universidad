@@ -13,13 +13,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .chat-container {
             background: #fff;
-            width: 400px;
-            max-width: 90%;
+            width: 600px;          /* Antes: 400px */
+            height: 80vh;          /* Nueva altura */
+            max-width: 95%;
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             display: flex;
@@ -30,29 +31,29 @@
         .chat-header {
             background: #2575fc;
             color: #fff;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .institution-info {
             text-align: center;
             background: #e4e6eb;
-            padding: 10px;
-            font-size: 14px;
+            padding: 12px;
+            font-size: 15px;
             color: #333;
         }
 
         .chat-body {
             flex: 1;
-            padding: 15px;
+            padding: 20px;
             background: #f4f6fa;
             overflow-y: auto;
         }
 
         .chat-message {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             display: flex;
             align-items: flex-end;
         }
@@ -66,12 +67,12 @@
         }
 
         .message-content {
-            max-width: 70%;
-            padding: 10px 15px;
-            border-radius: 20px;
+            max-width: 75%;
+            padding: 12px 20px;
+            border-radius: 25px;
             background: #e4e6eb;
             position: relative;
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .chat-message.user .message-content {
@@ -87,17 +88,18 @@
 
         .chat-footer {
             display: flex;
-            padding: 10px;
+            padding: 15px;
             border-top: 1px solid #ddd;
             background: #fff;
         }
 
         .chat-footer input {
             flex: 1;
-            padding: 10px 15px;
-            border-radius: 20px;
+            padding: 12px 20px;
+            border-radius: 25px;
             border: 1px solid #ccc;
             outline: none;
+            font-size: 16px;
         }
 
         .chat-footer button {
@@ -105,9 +107,10 @@
             color: #fff;
             border: none;
             margin-left: 10px;
-            padding: 10px 20px;
-            border-radius: 20px;
+            padding: 12px 25px;
+            border-radius: 25px;
             cursor: pointer;
+            font-size: 16px;
             transition: background 0.3s;
         }
 
@@ -167,4 +170,3 @@
     </script>
 </body>
 </html>
-
